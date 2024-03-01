@@ -11,6 +11,7 @@ int main() {
 
     cout << "El producto de los primeros 10 numeros naturales es: " << producto <<endl;
 
+
     return 0;
 }
 
