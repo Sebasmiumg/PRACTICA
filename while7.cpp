@@ -1,24 +1,24 @@
 #include <iostream>
+using namespace std;
 
 int main() {
-    int count = 0;
-    double num, sum = 0.0;
+    int cantidad, numero, suma = 0, contador = 0;
 
-    std::cout << "Ingresa números :\n";
-    std::cout <<"(ingresa -1 para terminar) \n";
+    cout << "Ingrese la cantidad de numeros a ingresar: ";
+    cin >> cantidad;
 
-    while(std::cin >> num && num != -1) {
-        sum += num;
-        count++;
+    while (contador < cantidad) {
+        cout << "Ingrese un numero: ";
+        cin >> numero;
+        suma += numero;
+        contador++;
     }
 
-    if(count != 0) {
-        std::cout << "La media de los números ingresados es " << sum / count << "\n";
-    } else {
-        std::cout << "No se ingresaron números.\n";
-    }
+    double media = static_cast<double>(suma) / cantidad;
+    cout << "La media de los numeros ingresados es: " << media << endl;
 
     return 0;
 }
+
 
 //7.	Haz un programa que calcule la media de una serie de números ingresados por el usuario.
